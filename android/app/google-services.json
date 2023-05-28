@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "456109044068",
+    "project_id": "memoapp-a8fce",
+    "storage_bucket": "memoapp-a8fce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456109044068:android:a1f73e2a814a3c732b4a71",
+        "android_client_info": {
+          "package_name": "com.example.memo_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456109044068-390hkp41ekbnekj1nltaf59blulh13as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8jjkgQoj6YpsmxIGbW4mSfjQ4r-ocyYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456109044068-390hkp41ekbnekj1nltaf59blulh13as.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
