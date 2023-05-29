@@ -94,7 +94,7 @@ class _LoginPageState extends State<LoginPage> {
                                 );
                               } catch (e) {
                                 setState(() {
-                                  infoText = "登録に失敗しました:${e.toString()}";
+                                  infoText = "登録に失敗しました";
                                 });
                               }
                             },
@@ -115,13 +115,14 @@ class _LoginPageState extends State<LoginPage> {
                 ],
               ),
             ),
-            const Text('ログインページ'),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: ((context) => RegistrationPage())));
+                  context,
+                  MaterialPageRoute(
+                    builder: ((context) => RegistrationPage()),
+                  ),
+                );
               },
               child: Text('登録ページ'),
             )
@@ -131,91 +132,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
-
-// class LoginPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: appBar(),
-//       endDrawer: commonDrawer(2),
-//       body: Center(
-//         child: Column(
-//           mainAxisSize: MainAxisSize.min,
-//           children: [
-//             Container(
-//               child: Column(
-//                 children: [
-//                   Container(
-//                     alignment: Alignment.center,
-//                     color: Colors.lightBlue[100],
-//                     width: 400,
-//                     height: 50,
-//                     child: const Text(
-//                       'ユーザー登録',
-//                       style: TextStyle(fontSize: 20, color: Colors.white),
-//                     ),
-//                   ),
-//                   Container(
-//                     alignment: Alignment.center,
-//                     color: Colors.grey[200],
-//                     width: 400,
-//                     height: 250,
-//                     child: Column(
-//                       children: [
-//                         const Padding(
-//                           padding: EdgeInsets.all(10.0),
-//                           child: TextField(
-//                             decoration: InputDecoration(
-//                               labelText: 'ログインID',
-//                             ),
-//                           ),
-//                         ),
-//                         const Padding(
-//                           padding: EdgeInsets.all(10.0),
-//                           child: TextField(
-//                             decoration: InputDecoration(
-//                               labelText: 'パスワード',
-//                             ),
-//                           ),
-//                         ),
-//                         const SizedBox(
-//                           width: 100,
-//                           height: 20,
-//                         ),
-//                         SizedBox(
-//                           width: 370,
-//                           height: 40,
-//                           child: ElevatedButton(
-//                               style: ElevatedButton.styleFrom(
-//                                   backgroundColor: Colors.lightBlue[100]),
-//                               onPressed: () {
-//                                 Navigator.push(
-//                                     context,
-//                                     MaterialPageRoute(
-//                                         builder: ((context) => HomePage())));
-//                               },
-//                               child: const Text('ログイン')),
-//                         )
-//                       ],
-//                     ),
-//                   ),
-//                 ],
-//               ),
-//             ),
-//             const Text('ログインページ'),
-//             ElevatedButton(
-//               onPressed: () {
-//                 Navigator.push(
-//                     context,
-//                     MaterialPageRoute(
-//                         builder: ((context) => RegistrationPage())));
-//               },
-//               child: Text('登録ページ'),
-//             )
-//           ],
-//         ),
-//       ),
-//     );
-//   }
-// }

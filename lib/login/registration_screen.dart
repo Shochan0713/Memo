@@ -50,10 +50,10 @@ class _RegistrationPageState extends State<RegistrationPage> {
                         child: Column(
                           children: [
                             Padding(
-                              padding: EdgeInsets.all(10.0),
+                              padding: const EdgeInsets.all(10.0),
                               child: TextFormField(
                                 decoration:
-                                    InputDecoration(labelText: 'メールアドレス'),
+                                    const InputDecoration(labelText: 'メールアドレス'),
                                 onChanged: (String value) {
                                   setState(() {
                                     _email = value;
@@ -62,7 +62,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(10.0),
+                              padding: const EdgeInsets.all(10.0),
                               child: TextFormField(
                                 decoration:
                                     const InputDecoration(labelText: 'パスワード'),
@@ -101,7 +101,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                                     );
                                   } catch (e) {
                                     setState(() {
-                                      infoText = "登録に失敗しました:${e.toString()}";
+                                      infoText = "登録に失敗しました";
                                     });
                                   }
                                 },
@@ -124,13 +124,17 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 ),
               ],
             ),
-            const Text('RegistrationPage'),
             ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => LoginPage())));
-                },
-                child: const Text('ログインページ'))
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: ((context) => LoginPage()),
+                  ),
+                );
+              },
+              child: const Text('ログインページ'),
+            )
           ],
         ),
       ),

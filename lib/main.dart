@@ -46,15 +46,14 @@ class _StartPageState extends State<StartPage> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text(
-              'StartPage',
-              style: TextStyle(color: Colors.black),
+            Container(
+              width: 154,
+              height: 230,
+              child: Image.asset(
+                'images/memo.png',
+                fit: BoxFit.contain,
+              ),
             ),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: const Text('前のページへ遷移')),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
