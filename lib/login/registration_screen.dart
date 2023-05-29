@@ -22,7 +22,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(),
-      endDrawer: commonDrawer(2),
+      endDrawer: commonDrawer(2, context),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,

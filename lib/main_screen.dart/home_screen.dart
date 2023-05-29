@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(),
-      endDrawer: commonDrawer(1),
+      endDrawer: commonDrawer(1, context),
       body: Column(
         children: [
           Padding(

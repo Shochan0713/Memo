@@ -14,8 +14,19 @@ class _MypageState extends State<Mypage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: appBar(),
-        endDrawer: commonDrawer(1),
-        body: Column(children: []));
+      appBar: appBar(),
+      endDrawer: commonDrawer(1, context),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: const [
+            Text(
+              'myapge',
+              style: TextStyle(fontSize: 40),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

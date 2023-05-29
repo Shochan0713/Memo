@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(),
-      endDrawer: commonDrawer(2),
+      endDrawer: commonDrawer(2, context),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
